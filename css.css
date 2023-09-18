@@ -1,0 +1,67 @@
+:root {
+  --themecolor: #22228b;
+  --themeWhite: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  color: #131313a3;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.themeBg {
+  background-color: var(--themecolor);
+  color: var(--themeWhite);
+}
+
+#personalData::after,
+#experience::after,
+#objective::after,
+#others::after {
+  content: "";
+  height: 2px;
+  background: var(--themecolor);
+  width: 100%;
+  display: block;
+}
+
+#personalData,
+#experience,
+#objective,
+#others,
+.personalDetailsBlock,
+.skillsBlock {
+  margin: 15px 0;
+}
+
+.personalDetailsBlock::after,
+.skillsBlock::after {
+  content: "";
+  height: 2px;
+  background: var(--themecolor);
+  width: 100%;
+  display: block;
+  margin: 0 0 0 10px;
+}
+
+.noBreak {
+  white-space: nowrap;
+}
+
+.headings {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--themecolor);
+}
