@@ -82,8 +82,8 @@ const renderExperience = (element, elmID) => {
      
     `;
   element.company.forEach((company) => {
-    html += `<div class="ms-3 d-flex justify-content-between">
-      <span> ${company.name} </span> 
+    html += `<div class="ms-3 mb-1 d-flex justify-content-between">
+      <span class='fw-bold'> ${company.name} </span> 
       <span> ${company.from} 
       ${!!company.to && ` - ${company.to}`}
        </span>
@@ -177,14 +177,26 @@ const projects = {
     },
     {
       title: "Whealth Studio",
-      about: `WhealthStudio Dashboard - Web-based platform for health and fitness management.`,
+      about: `We invest in and grow tech-enabled early-stage healthcare companies
+      that are disrupting care delivery in the US and India.`,
       link: "https://dashboard.whealthstudio.com/",
     },
     {
       title: "Elevate Now",
-      about: `Elevate Now Dashboard - Web-based platform for health and fitness management.`,
+      about: `Elevate Now is India’s first medical weight loss program designed by expert doctors and health coaches. We help you lose excess weight by resetting your metabolism so you can live the life you love.`,
       link: "https://dashboard.joinelevatenow.co.in/",
     },
+    {
+      title: "Nivaan Care",
+      about: `Consult With India’s Most Advanced Pain Management Specialists`,
+      link: "",
+    },
+    {
+      title: "risemoney",
+      about: `A singular portal for data management that helps access all the information about the  customer like EMI status , payments , dues , deposits , loan case, ledgers and <br>all financial activities involved across this business domain.`,
+      link: "",
+    }
+
   ],
 };
 const others = [
@@ -208,14 +220,15 @@ const objective = [
 const experiences = {
   text: "EXPERIENCE",
   icon: "business_center",
-  company: [{ name: "RVJ Infotech", from: "01-Dec-2021", to: "22-june-2023" }],
+  company: [{ name: "RVJ Infotech", from: "01-Dec-2021", to: "22-june-2023" },
+  { name: "Zentek Infosoft", from: "22-june-2023", to: "-" }],
 };
 
 const skills = [
-  "React Native",
+  "Node js",
   "React Js",
   "Next.js",
-  "Node js",
+  "React Native",
   "Javascript",
   "TypeScript",
   "HTML",
@@ -223,6 +236,9 @@ const skills = [
   "Bootstrap",
   "Git & GitHub",
   "Linux",
+  "python",
+  'django',
+
 ];
 
 renderData(personalData, "personalData");
