@@ -220,7 +220,7 @@ const objective = [
 const experiences = {
   text: "EXPERIENCE",
   icon: "business_center",
-  company: [{ name: "RVJ Infotech", from: "01-Dec-2021", to: "22-june-2023" },
+  company: [{ name: "RVJ Infotech", from: "12-june-2021", to: "22-june-2023" },
   { name: "Zentek Infosoft", from: "22-june-2023", to: "-" }],
 };
 
